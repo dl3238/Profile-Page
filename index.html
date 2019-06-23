@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+  <!--Font Awesome    -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+  <!--Header-->
+  <div class="container-fluid">
+    <div class="row" id="navbar">
+      <div class="col-2 text-center">
+        <h1 id="header">JustGuitar</h1>
+        <p id="text-under-header">For All Guitar Lovers</p>
+      </div>
+      <!--Navigation-->
+      <div class="col-10">
+        <ul class="nav justify-content-end">
+          <li>
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active text-secondary dropdown-toggle" data-toggle="dropdown" href="#" role="button" aris-haspopup="true" aria-expanded="false">Tabs</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Today's Most Popular</a>
+              <a class="dropdown-item" href="#">Most Populat of All Time</a>
+              <a class="dropdown-item" href="#">Recently Added</a>
+              <a class="dropdown-item" href="#">Songs A-Z</a>
+              <a class="dropdown-item" href="#">Artist A-Z</a>
+              <a class="dropdown-item" href="#">Chords</a>
+            </div>
+          </li>
+          <li>
+            <a class="nav-link active text-secondary" href="#">Videos</a>
+          </li>
+          <li>
+            <a class="nav-link active text-secondary" href="forum.html">Forum</a>
+          </li>
+          <li>
+            <a class="nav-link active text-secondary" href="#">Events</a>
+          </li>
+          <li>
+            <a class="nav-link active text-secondary" href="#">Contact</a>
+          </li>
+      </div>
+
+    </div>
+  </div>
+  <!--End of Header-->
+
+  <div class="container-fluid d-flex align-item-end">
+    <div class="row">
+
+      <img class="img-thumbnail" id="avatar" src="https://images.unsplash.com/photo-1524650359799-842906ca1c06?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=f912ab9d9bf9051b1bd49169429d9d1e"
+        alt="avatar-img">
+
+      <h4> Welcome, <a href="#">Visitor</a>.</h4>
+
+    </div>
+  </div>
+  <!--Nav of personal space-->
+  <div class="container-fluid">
+    <div class="row">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="photo-tab" data-toggle="tab" href="#photo" role="tab" aria-controls="photo" aria-selected="false">Photos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="tabs-tab" data-toggle="tab" href="#tabs" role="tab" aria-control="tabs" aria-selected="false">Tabs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="Videos-tab" data-toggle="tab" href="#videos" role="tab" aria-control="videos" aria-selected="false">Videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Favorites</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tab-content" id="myTabContent">
+
+    <!--Profile form-->
+    <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="card">
+        <div class="card-header">
+          <h4>Editing Username and Email</h4>
+        </div>
+        <div class="card-body">
+          <div class="container">
+            <form>
+              <div class="editUserName">Edit User Name(Optional):</div>
+              <div class="form-group">
+                <label for="userName" class="control-label"><b>New User Name:</b> </label>
+                <input type="userName" class="form-control col-6" id="userName" placeholder="User Name">
+                <a href="#" class="btn btn-secondary">Save</a>
+                <a href="#" class="btn btn-primary">Update</a>
+              </div>
+              <div class="editUserName">Edit Email Address(Optional): </div>
+              <div class="form-group">
+                <lable for="email" class="control-label"><b>Email: </b></lable>
+                <input type="email" class="form-control col-6" id="email" placeholder="sample@gmail.com">
+
+              </div>
+              <div class="form-group row">
+                <label for="phone"></label>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Profile form end-->
+
+    <div class="tab-pane fade" id="photo" role="tabpanel" aria-labelledby="photo-tab">Albums of photos</div>
+
+    <div class="tab-pane fade" id="tabs" role="tabpanel" aria-labelledby="tabs-tab">
+
+      <div class="container-fluid">
+        <div class="row">
+
+          <!--Tabs nav-->
+          <div class="col-2">
+            <div class="nav nav-pills flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link active" id="v-pills-collection-tab" data-toggle="pill" role="tab" aria-controls="v-pills-collection" aria-selected="true" href="#v-pills-collection"> My Tabs Collection</a>
+              <a class="nav-link" id="v-pills-new-tab" data-toggle="pill" role="tab" aria-controls="v-pills-new" aria-selected="false" href="#v-pills-new">Create New</a>
+              <a class="nav-link" id="v-pills-modified-tab" data-toggle="pill" role="tab" aria-controls="v-pills-modified" aria-selected="false" href="#v-pills-modified">Modified Tabs</a>
+              <a class="nav-link" id="v-pills-comments-tab" data-toggle="pill" role="tab" aria-controls="v-pills-comments" aria-selected="false" href="#v-pills-comments">Comments</a>
+            </div>
+          </div>
+          <!-- Tab content -->
+          <div class="col-10">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-collection" role="tabpanel" aria-labelledby="v-pills-collection-tab">tab collection</div>
+              <!--Simple lesson: learn how to create and upload a new tab  -->
+              <div class="tab-pane fade" id="v-pills-new" role="tabpanel" aria-labelledby="v-pills-new-tab">
+                <form class="form-horizontal">
+                  <div class="form-group row">
+
+                    <label for="tabName" class="control-label col-2">Tab Name:</label>
+                    <div class="col-8">
+                      <input type="tabName" class="form-control" id="tabName" placeholder="Enter the name of the song/music ">
+                    </div>
+
+                  </div>
+                  <div class="form-group row">
+                    <label for="musician" class="control-label col-2">Musician:</label>
+                    <div class="col-8">
+                      <input type="musician" class="form-control" id="musician" placeholder="Enter musician name">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="instrument" class="control-label col-2">Instrument:</label>
+                    <select class="form-control col-4" id="instrument-select">
+                      <option>Select One</option>
+                      <option>Acoustic Guitar</option>
+                      <option>Electric Guitar</option>
+                      <option>Bass</option>
+                      <option>Electric Bass</option>
+                      <option>Distortion Guitar</option>
+                      <option>Overdriven Guitar</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="genre" class="control-label col-2">Genre:</label>
+                    <select class="form-control col-4" id="genre-select">
+                      <option>Select One</option>
+                      <option>Pop</option>
+                      <option>Electronic</option>
+                      <option>Jazz</option>
+                      <option>Blue</option>
+                      <option>R&B</option>
+                      <option>Rock</option>
+                      <option>Metal</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="key" class="control-label col-2">Key:</label>
+                    <select class="form-control col-4" id="key-select">
+                      <option>Select One</option>
+                      <option>C</option>
+                      <option>Am</option>
+                      <option>G</option>
+                      <option>D</option>
+                      <option>Em</option>
+                      <option>E</option>
+                      <option>A</option>
+                      <option>Dm</option>
+                      <option>F</option>
+                    </select>
+                    <label for="toggleSwitch" class="control-label col-2" id="capo-switch">With Capo</label>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+
+                  <div class="form-group row">
+
+                    <label for="origin" class="control-label col-2">Origin:</label>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="Bianpei">Rearrangement</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio1">Tab Edit</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                      <label class="form-check-label" for="inlineRadio2">Reprint</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                      <label class="form-check-label" for="inlineRadio3">Original Composition</label>
+                    </div>
+                  </div>
+                  <!--  difficulty -->
+                  <div class="form-group row">
+
+                    <label for="difficulty" class="control-label col-2">Difficulty:</label>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="novice" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">Novice</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="intermediate" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">Intermediate</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="advanced" value="option3">
+                      <label class="form-check-label" for="inlineRadio3">Advanced</label>
+                    </div>
+                  </div>
+                  <!--Tab file upload -->
+                  <div class="form-group row">
+                    <label for="document" class="control-label col-2">Document:</label>
+                    <div class="col-8">
+                      <input type="url" class="form-control" id="url" placeholder="Enter URL">
+                      <div id="fileUploadContainer">
+                        <label for="file-upload">Upload File (See our <a href="http://data.17jita.com/attachment/portal/201509/03/110630hklohueoyhttlzp7.png">sample</a> tab)</label>
+                        <input type="file" class="form-control-file" id="file-upload">
+                        <div id="status" class="info">File format supported: PDF, JPG, OVE, MUS, SIB. Upload after compression recommended.</div>
+                        <button type="button" class="btn btn-sm btn-outline-dark">Upload</button>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="description" class="control-label col-2">Description:</label>
+                    <div class="col-8">
+                      <textarea class="form-control" id="tab-description" rows="4" placeholder="Describe stories and details of your tab here..."></textarea>
+                      <input type="url" class="form-control" id="audition" placeholder="Enter URL of audition">
+
+                      <div id="descriptionContainer">
+                        <label for="file-upload">Upload File</label>
+                        <input type="file" class="form-control-file" id="description">
+                        <div id="status" class="info">Please upload the audition file or the cover picture</div>
+                        <button type="button" class="btn btn-sm btn-outline-dark">Upload</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="declarations" class="control-label col-2">Declarations:</label>
+                    <div class="form-control-static col-8" id="declarations">
+                      <p>
+                        <ol>
+                          <li>You should only upload files in supported format</li>
+                          <li>Please mark the source of the tab</li>
+                          <li>Please fill in all required information</li>
+                          <li>Please upload tab in a neat and clean format</li>
+                          <li>Submission of tabs means you agree with terms and regulation of this website</li>
+                        </ol>
+                      </p>
+
+                      </textarea>
+
+                    </div>
+                  </div>
+                </form>
+                <div class="col-10 text-center" id="submit-buttons">
+                  <button type="save" class="btn btn-outline-primary">Save&Later</button>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+              <!-- Lesson End -->
+              <div class="tab-pane fade" id="v-pills-modified" role="tabpanel" aria-labelledby="v-pills-modified-tab">modified tabs</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">Videos</div>
+  </div>
+  <!-- Javascript  -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
